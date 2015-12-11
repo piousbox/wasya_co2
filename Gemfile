@@ -20,3 +20,7 @@ group :test do
   gem 'ruby-prof'
   gem 'simplecov', :require => false
 end
+
+group :development do
+  gem 'html2haml'
+end
