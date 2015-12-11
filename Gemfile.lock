@@ -181,6 +181,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.1.0)
   factory_girl_rails
+  haml
   html2haml
   httparty
   jbuilder (~> 2.0)

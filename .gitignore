@@ -1,5 +1,16 @@
 
+tmp
+log
+*.DS_Store
 
 *~
+\#*
+.#*
+
+coverage
+.sass-cache
+
 *.trash
 vendor/bundle
+
+db/development.sqlite3
