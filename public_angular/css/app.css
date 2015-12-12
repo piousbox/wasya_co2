@@ -1,0 +1,16 @@
+
+body {
+}
+
+.footer-top {
+    background: #2ba6cb;
+    height: 240px;
+}
+
+.footer-bottom {
+    padding-top: 1em;
+    
+    background: #333;
+    color: #666;
+    height: 120px;
+}
