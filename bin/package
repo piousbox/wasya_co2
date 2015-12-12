@@ -4,4 +4,8 @@
 # convert rails project to plain angular project. Run this every time, all the time.
 #
 
-cd /home/piousbox/projects/wasya_co2/public && curl localhost:3012 > index.html
+set -e
+
+cd /home/piousbox/projects/wasya_co2/public_angular
+curl localhost:3012 -s > index.html
+echo 'OK'
