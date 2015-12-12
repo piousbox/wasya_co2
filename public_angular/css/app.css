@@ -2,13 +2,22 @@
 body {
 }
 
+.services-list img {
+    width: 200px;
+}
+.services-list > .row {
+    margin-bottom: 3em;
+}
+
+
 .footer-top {
     background: #2ba6cb;
     padding: 20px 0 50px 0;
 }
-.footer-top ul.about-us li,
+.footer-top ul.products li,
+.footer-top ul.services li,
 .footer-top ul.knowledge-base li,
-.footer-top ul.services li {
+.footer-top ul.about-us li {
     /* border-bottom: 1px solid #666; */
     padding: .2em;
     background: #5EBEDB;
