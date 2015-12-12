@@ -116,7 +116,7 @@ select {
   margin-top: 0;
   margin-bottom: 0;
   /* _vp_ 20151211 */
-  /* max-width: 62.5rem; */
+  max-width: 62.5rem;
   *zoom: 1; }
   .row:before, .row:after {
     content: " ";

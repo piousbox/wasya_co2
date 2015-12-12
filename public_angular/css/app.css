@@ -4,9 +4,16 @@ body {
 
 .footer-top {
     background: #2ba6cb;
-    height: 240px;
+    padding: 20px 0 50px 0;
 }
-
+.footer-top ul.about-us li,
+.footer-top ul.knowledge-base li,
+.footer-top ul.services li {
+    /* border-bottom: 1px solid #666; */
+    padding: .2em;
+    background: #5EBEDB;
+    margin-bottom: 4px;
+}
 .footer-bottom {
     padding-top: 1em;
     
