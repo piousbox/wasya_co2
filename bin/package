@@ -6,6 +6,9 @@
 
 set -e
 
-cd /home/piousbox/projects/wasya_co2/public_angular
+cd /home/piousbox/projects/wasya_co2/public
 curl localhost:3012 -s > index.html
+
+cp -r /home/piousbox/projects/ish_lib/app/assets/images/icons /home/piousbox/projects/wasya_co2/public/img
+
 echo 'OK'
