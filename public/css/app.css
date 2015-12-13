@@ -37,10 +37,13 @@ body {
     margin-bottom: 10em;
 }
 .services-list img {
-    width: 200px;
+    /* width: 200px; */
 }
 .services-list > .row {
-    margin-bottom: 3em;
+    margin-bottom: 10em;
+}
+.services-list > .services {
+    margin-bottom: 4em;
 }
 @media only screen and (min-width: 64.063em) { /* min-width 1025px, large screens */
     .services-list .ror .image,
@@ -52,6 +55,16 @@ body {
         text-align: right;
     }
     
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+    .services-list .ror .image,
+    .services-list .devops .image,
+    .services-list .html5 .image,
+    .services-list .project-management .image,
+    .services-list .nodejs .image,
+    .services-list .uiux .image {
+        text-align: center;
+    }
 }
 
 /* footer */
