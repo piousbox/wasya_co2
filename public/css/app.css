@@ -29,11 +29,13 @@ body {
 
 /* about wasya co */
 .about-wasya-co {
+    padding-top: 3em;
     margin: 5em 0 10em 0;
 }
 
 /* services */
 .services-list {
+    padding-top: 3em;
     margin-bottom: 10em;
 }
 .services-list img {

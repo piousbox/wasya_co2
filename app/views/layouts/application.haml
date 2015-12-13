@@ -1,17 +1,24 @@
 !!!
 %html{ :lang => "en", "ng-app" => "wasya_co2" }
   %head
-    %meta{ :content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type" }
     %title Wasya.co | Software Engineering &amp; Devops Consulting in San Francisco Bay Area
+    
+    %meta{ :content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type" }
     %meta{ :charset => "utf-8" }
     %meta{ :content => "width=device-width, initial-scale=1.0", :name => "viewport" }
+    
     %link{ :href => "/lib/normalize.css", :rel => "stylesheet" }
     %link{ :href => "/lib/foundation/foundation.css", :rel => "stylesheet" }
     %link{ :href => "/lib/socialicious.css", :rel => "stylesheet" }
     %link{ :href => "/css/app.css", :rel => "stylesheet" }
+    
+    -# %script{ :src => "//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js" }
+      
     %base{ :href => "/" }
+    
   %body
-    = render 'main_header'
+    .sticky
+      = render 'main_header'
     = yield
     = render 'main_footer'
     = render 'footer_js'

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang='en' ng-app='wasya_co2'>
   <head>
-    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
     <title>Wasya.co | Software Engineering &amp; Devops Consulting in San Francisco Bay Area</title>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
     <meta charset='utf-8'>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <link href='/lib/normalize.css' rel='stylesheet'>
@@ -12,39 +12,41 @@
     <base href='/'>
   </head>
   <body>
-    <nav class='top-bar' data-topbar='' role='navigation'>
-      <ul class='title-area'>
-        <li class='name'>
-          <h1>
-            <a href='#'>Wasya.co</a>
-          </h1>
-        </li>
-        <li class='toggle-topbar menu-icon'>
-          <a href='#'>
-            <span>Menu</span>
-          </a>
-        </li>
-      </ul>
-      <section class='top-bar-section'>
-        <ul class='right'>
-          <li>
-            <a>Products</a>
+    <div class='sticky'>
+      <nav class='top-bar' data-topbar='' role='navigation'>
+        <ul class='title-area'>
+          <li class='name'>
+            <h1>
+              <a href='javascript:void(0);'>Wasya.co</a>
+            </h1>
           </li>
-          <li>
-            <a>Services</a>
-          </li>
-          <li>
-            <a>Knowledge Base</a>
-          </li>
-          <li>
-            <a>About</a>
-          </li>
-          <li>
-            <a href="mailto:piousbox@gmail.com?subject=Potential Work Opportunity">Contact</a>
+          <li class='toggle-topbar menu-icon'>
+            <a href='javascript:void(0);'>
+              <span>Menu</span>
+            </a>
           </li>
         </ul>
-      </section>
-    </nav>
+        <section class='top-bar-section'>
+          <ul class='right'>
+            <li>
+              <a>Products</a>
+            </li>
+            <li>
+              <a class='services' href='javascript:void(0);'>Services</a>
+            </li>
+            <li>
+              <a>Knowledge Base</a>
+            </li>
+            <li>
+              <a class='about' href='javascript:void(0)'>About</a>
+            </li>
+            <li>
+              <a href="mailto:piousbox@gmail.com?subject=Potential Work Opportunity">Contact</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </div>
     <div class='about-wasya-co'>
       <div class='row'>
         <div class='large-12 columns'>
@@ -194,8 +196,14 @@
     <!-- <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script> -->
       
     <script src="/lib/modernizr.js"></script>
-    <script src="/lib/jquery/jquery.js"></script>
-    <script src="/lib/foundation/foundation.js"></script>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.3/i18n/jquery-ui-i18n.min.js"></script> -->
+    <!-- <script src="/lib/jquery/jquery-ui.min.js"></script> -->
+    <!-- <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></scr‌​ipt> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+    
+    <script src="/lib/foundation/foundation.min.js"></script>
     <script src="/lib/foundation/foundation.topbar.js"></script>
     <script src="/lib/lodash.min.js"></script>
     
@@ -211,10 +219,12 @@
     
     <script src="/lib/angulartics.min.js"></script>
     <script src="/lib/angulartics-google-analytics.min.js"></script>
+    -->
     
     <script src="/js/app.js"></script>
     <script src="/js/config.js"></script>
     
+    <!--
     <script src="/js/controllers/cities.js"></script>
     <script src="/js/controllers/reports.js"></script>
       
