@@ -27,15 +27,18 @@ body {
 }
 
 
+
 /* about wasya co */
 .about-wasya-co {
-    padding-top: 3em;
+    /* padding-top: 3em; */
     margin: 5em 0 10em 0;
 }
 
+
+
 /* services */
 .services-list {
-    padding-top: 3em;
+    /* padding-top: 3em; */
     margin-bottom: 10em;
 }
 .services-list img {
@@ -69,19 +72,33 @@ body {
     }
 }
 
+
+
+/* contact us */
+.contact-us {
+    margin-bottom: 10em;
+}
+
+
+
 /* footer */
 .footer-top {
     background: #2ba6cb;
     padding: 20px 0 50px 0;
 }
-.footer-top ul.products li,
+/* .footer-top ul.products li,
 .footer-top ul.services li,
 .footer-top ul.knowledge-base li,
-.footer-top ul.about-us li {
+.footer-top ul.about-us li,
+*/
+.footer-top ul li {
     /* border-bottom: 1px solid #666; */
     padding: .2em;
     background: #5EBEDB;
     margin-bottom: 4px;
+}
+.footer-top ul li a {
+    color: black;
 }
 .footer-bottom {
     padding-top: 1em;
