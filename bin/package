@@ -9,6 +9,9 @@ set -e
 cd /home/piousbox/projects/wasya_co2/public
 curl localhost:3012 -s > index.html
 
-cp -r /home/piousbox/projects/ish_lib/app/assets/images/icons /home/piousbox/projects/wasya_co2/public/img
+mkdir -p /home/piousbox/projects/wasya_co2/public/img/icons
+cp -r /home/piousbox/projects/ish_lib/app/assets/images/icons/64x64 /home/piousbox/projects/wasya_co2/public/img/icons/
+cp -r /home/piousbox/projects/ish_lib/app/assets/images/200x200 /home/piousbox/projects/wasya_co2/public/img/
+cp -r /home/piousbox/projects/ish_lib/app/assets/images/400x400 /home/piousbox/projects/wasya_co2/public/img/
 
 echo 'OK'

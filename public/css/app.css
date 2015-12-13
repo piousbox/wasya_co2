@@ -2,6 +2,16 @@
 body {
 }
 
+
+/* about us */
+.about-us {
+    margin: 5em 0 10em 0;
+}
+
+/* services */
+.services-list {
+    margin-bottom: 10em;
+}
 .services-list img {
     width: 200px;
 }
@@ -9,7 +19,7 @@ body {
     margin-bottom: 3em;
 }
 
-
+/* footer */
 .footer-top {
     background: #2ba6cb;
     padding: 20px 0 50px 0;
