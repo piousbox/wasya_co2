@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#
+# runs rspec
+#
+
+set -e
+
+gem install bundler
+bundle
+bundle exec rspec spec
+
+echo OK
+
+
