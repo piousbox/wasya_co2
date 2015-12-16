@@ -4,11 +4,11 @@
 # runs rspec
 #
 
-set -e
+# set -e
 
-GEM_HOME="$HOME/.gems" gem install bundler
-bundle install --path vendor/bundle
-bundle exec rspec spec
+GEM_HOME="$HOME/.gems" gem install bundler && \
+bundle install --path vendor/bundle        && \
+bundle exec rspec spec                     && \
 
 echo OK
 
