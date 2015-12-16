@@ -9,8 +9,7 @@ describe 'Routes' do
   end
   
   it 'root' do
-    response = HTTParty.get "#{@base_url}/"
-    response.code.should eql 200
+    expect( :get => '/' ).to route_to( "welcome#home" )
   end
 
 end

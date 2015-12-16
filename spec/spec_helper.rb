@@ -9,7 +9,7 @@ ENV["RAILS_ENV"] ||= 'test'
 
 RSpec.configure do |config|
   config.order = "random"
-  
+  config.infer_spec_type_from_file_location!
 end
 
 def puts! args, label=""
