@@ -14,5 +14,6 @@ CI/CD
 Make sure to install:
 * ruby (gems)
 * git
+* bundler
 
 Otherwise the jenkins job won't run.
