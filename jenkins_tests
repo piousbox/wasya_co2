@@ -6,7 +6,7 @@
 
 set -e
 
-gem install bundler
+GEM_HOME="$HOME/.gems" gem install bundler
 bundle install --path vendor/bundle
 bundle exec rspec spec
 
