@@ -9,6 +9,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'haml'
+gem 'libv8', '~> 3.11.8'
+gem 'therubyracer', :require => 'libv8'
 
 group :test do
   gem 'rspec-rails'
