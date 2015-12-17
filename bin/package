@@ -7,7 +7,8 @@
 set -e
 
 cd /home/piousbox/projects/wasya_co2/public
-curl localhost:3012 -s > index.html
+curl http://localhost:3012 -s -X HEAD -I | grep 200
+curl http://localhost:3012 -s > index.html
 
 mkdir -p /home/piousbox/projects/wasya_co2/public/img/icons
 cp -r /home/piousbox/projects/ish_lib/app/assets/images/icons/64x64 /home/piousbox/projects/wasya_co2/public/img/icons/
