@@ -4,7 +4,7 @@
 # runs rspec
 #
 
-set -e
+set -ex
 
 # GEM_HOME="$HOME/.gems" gem install bundler --no-ri --no-rdoc
 # bundler is installed via apt-get

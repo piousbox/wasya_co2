@@ -8,8 +8,8 @@ The rails project only generates the static html. Everything still runs as a sta
 
 Look at the /etc/apache2/sites-available/wasya_co2.conf for the setup for the virtual site.
 
-CI/CD
-=====
+CI/CD Pipeline
+==============
 
 Make sure to install:
 * ruby (gems)
