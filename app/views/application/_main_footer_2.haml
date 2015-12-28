@@ -6,11 +6,13 @@
         %li
           %a.services{ :href => "javascript:void(0);" } Services
         %li
-          = link_to "Knowledge Base", "http://wiki.computationalartscorp.com"
-        %li
           %a.about{ :href => "javascript:void(0)" } About
         %li
           = link_to "Contact", contact_path
+      %h4 Knoledge Base
+      %ul.knowledge-base.no-bullet
+        %li= link_to 'Blog', "http://blog.wasya.co"
+        %li= link_to 'Wiki', "http://wiki.computationalartscorp.com"
   
 .footer-bottom
   .row

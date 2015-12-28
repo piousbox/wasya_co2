@@ -13,8 +13,12 @@
       - #   %a Products
       %li
         %a.services{ :href => "javascript:void(0);" } Services
-      %li
-        = link_to "Knowledge Base", "http://wiki.computationalartscorp.com"
+      %li.has-dropdown
+        -# = link_to "Knowledge Base", "http://wiki.computationalartscorp.com"
+        %a{ :href => "javascript:void(0);" } Knowledge Base
+        %ul.dropdown
+          %li= link_to "Blog", "http://blog.wasya.co"
+          %li= link_to "Wiki", "http://wiki.computationalartscorp.com"
       %li
         %a.about{ :href => "javascript:void(0)" } About
       %li
