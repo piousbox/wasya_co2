@@ -24,13 +24,17 @@
 
 
 body {
+  background: url("/images/bg/confectionary.png");
 }
 
-
+#sun {
+  position: absolute;
+  top: 150px;
+}
 
 /* about wasya co */
 .about-wasya-co {
-    /* padding-top: 3em; */
+    padding-top: 3em;
     margin: 5em 0 10em 0;
 }
 .about-wasya-co h1 {
@@ -38,13 +42,15 @@ body {
     font-weight: bold;
     color: #58C4E8;
 }
-
+.about-parallax {
+  height: 300px;
+}
 
 
 /* services */
 .services-list {
-    /* padding-top: 3em; */
-    margin-bottom: 10em;
+    padding-top: 3em;
+    margin-bottom: 1em;
 }
 .services-list img {
     /* width: 200px; */
@@ -76,6 +82,9 @@ body {
         text-align: center;
     }
 }
+.services-parallax {
+  height: 300px;
+}
 
 
 
@@ -88,7 +97,8 @@ body {
 
 /* footer */
 .footer-top {
-    background: #2ba6cb;
+    /* background: #2ba6cb; */
+    background: url("/img/bg/green_dust_scratch.png");
     padding: 20px 0 50px 0;
 }
 /* .footer-top ul.products li,
@@ -97,19 +107,24 @@ body {
 .footer-top ul.about-us li,
 */
 .footer-top ul li {
-    /* border-bottom: 1px solid #666; */
-    padding: .2em;
-    background: #5EBEDB;
-    margin-bottom: 4px;
+    /* border-bottom: 1px solid #666;
+    background: #5EBEDB; */
+    margin-bottom: 8px;
+    padding: .3em;
+    border-left: 10px solid #5EBEDB;
+    border-bottom: 3px solid #5EBEDB;
 }
 .footer-top ul li a {
     color: black;
 }
 .footer-bottom {
     padding-top: 1em;
-    
-    background: #333;
+    /* background: #333; */
+    background: url("/img/bg/little_pluses.png");
     color: #666;
     height: 120px;
 }
-
+.shtick {
+  background: white;
+  padding: 4px;
+}

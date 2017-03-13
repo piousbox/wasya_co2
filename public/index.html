@@ -22,12 +22,12 @@
     </script>
   </head>
   <body>
-    <div class='a'>
+    <div class='fixed'>
       <nav class='top-bar' data-topbar='' role='navigation'>
         <ul class='title-area'>
           <li class='name'>
             <h1>
-              <a href='javascript:void(0);'>Wasya.co</a>
+              <a class="about" href='javascript:void(0);'>Wasya.co</a>
             </h1>
           </li>
           <li class='toggle-topbar menu-icon'>
@@ -38,6 +38,7 @@
         </ul>
         <section class='top-bar-section'>
           <ul class='right'>
+            <li><a class="about" href="javascript:void(0);">About</a>
             <li>
               <a class='services' href='javascript:void(0);'>Services</a>
             </li>
@@ -60,12 +61,16 @@
         </section>
       </nav>
     </div>
+
+    <!-- <div class="top-parallax" data-parallax="scroll" data-natural-width="100" data-image-src="/img/bg/little_suns.jpg"></div> -->
+    <div id="sun"><img src="/img/bg/little_sun.png" alt="" /></div>
+
     <a name='about'></a>
     <div class='about-wasya-co'>
       <div class='row'>
         <div class='large-12 columns'>
           <div class='text-center'>
-            <img src="/images/400x400/the-cloud.png" alt="The cloud" />
+            <img src="/images/400x400/clouds.png" alt="The cloud" />
             <h1>Wasya.co</h1>
           </div>
         </div>
@@ -76,6 +81,9 @@
           <p>We are a niche consulting firm in San Francisco Bay Area focusing on web development and devops. We service startups, small- and medium-sized local businesses who have a focus on technology. We utilize the modern best development practices and provide our clients with the most effective tooling possible.</p>
         </div>
       </div>
+
+      <div class="about-parallax" data-parallax="scroll" data-image-src="/img/1920x1080/clouds.jpg"></div>
+
     </div>
     <a name='services'></a>
     <div class='services-list'>
@@ -158,8 +166,10 @@
           </div>
         </div>
       </div>
+      <div class="services-parallax" data-parallax="scroll" data-image-src="/img/1920x1080/ground.jpg"></div>
     </div>
-    <div class='contact-us'>
+
+    <!-- <div class='contact-us'>
       <div class='row'>
         <div class='large-12 columns'>
           <div class='text-center'>
@@ -167,7 +177,22 @@
           </div>
         </div>
       </div>
+    </div> -->
+    <div class="row">
+      <form>
+        <div class="text-center"><h1>Contact us</h1></div>
+        <div class="small-12 large-6 columns">
+          <input type="test" placeholder="Your Name" />
+          <input type="test" placeholder="Phone Number" />
+          <input type="test" placeholder="Email Address" />
+        </div>
+        <div class="small-12 large-6 columns">
+          <textarea placeholder="Brief summary about your project"></textarea>
+          <button class="small" type="Submit" value="Submit" name="submit">Send</button>
+        </div>
+      </form>
     </div>
+
     <div class='footer-top'>
       <div class='row'>
         <div class='large-4 large-push-8 columns'>
@@ -184,13 +209,13 @@
     <div class='footer-bottom'>
       <div class='row'>
         <div class='large-4 columns'>
-          ^__^
+          <span class="shtick">^__^</span>
         </div>
         <div class='large-4 columns'>
           Copyright &copy; 2013-2015 Wasya.co
         </div>
         <div class='large-4 columns'>
-          0.0.0 - knowledge base is two-piece
+          0.0.2 - backgrounds
         </div>
       </div>
     </div>
@@ -211,6 +236,7 @@
     <script src="/lib/foundation/foundation.min.js"></script>
     <script src="/lib/foundation/foundation.topbar.js"></script>
     <script src="/lib/lodash.min.js"></script>
+    <script src="/lib/parallax.js-1.4.2/parallax.min.js"></script>
     
     <!--
     <script src="/lib/angular/angular.js"></script>
