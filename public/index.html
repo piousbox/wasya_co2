@@ -165,15 +165,6 @@
       <div class="services-parallax" data-parallax="scroll" data-image-src="/img/1920x1080/ground.jpg"></div>
     </div>
 
-    <!-- <div class='contact-us'>
-      <div class='row'>
-        <div class='large-12 columns'>
-          <div class='text-center'>
-            <a href="mailto:admin@wasya.co?subject=Potential Work Opportunity"><img src="/images/400x400/contact-us.png" alt="Contact us" /></a>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <a name='contact'></a>
     <div class="row" id="contact_us" >
       <form>
@@ -183,12 +174,21 @@
           <input type="text" name="name"  placeholder="Your Name" />
           <input type="text" name="phone" placeholder="Phone Number" />
           <input type="text" name="email" placeholder="Email Address" />
+          <input type="text" name="verification" placeholder="For verification, what's 5+9?" />
         </div>
         <div class="small-12 large-6 columns">
+          <p>&nbsp;</p>
           <textarea placeholder="Brief summary about your project"></textarea>
           <button class="small" type="Submit" value="Submit" name="submit">Send</button>
         </div>
       </form>
+    </div>
+    <div id="contact_us_response">
+      <div class="panel">
+        <p>Your request has been sent. </p>
+        <p>Page says: <span class="response"></span></p>
+        <button class="small contact_us_response_close ">Close</button>
+      </div>
     </div>
 
     <div class='footer-top'>
@@ -229,7 +229,8 @@
     <!-- <script src="/lib/jquery/jquery-ui.min.js"></script> -->
     <!-- <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></scr‌​ipt> -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
-    
+    <script src="/lib/jquery/jquery.popupoverlay.js"></script>
+
     <script src="/lib/foundation/foundation.min.js"></script>
     <script src="/lib/foundation/foundation.topbar.js"></script>
     <script src="/lib/lodash.min.js"></script>

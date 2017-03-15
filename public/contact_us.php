@@ -8,13 +8,19 @@ $name  = $_POST['name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
 $descr = $_POST['descr'];
+$verification = $_POST['verification'];
+if ($verification != '14') {
+  $output = "Verification failed. Please provide the correct verification answer.";
+} else {
 
-$data = "payload=" . json_encode(array(
-    "text" => "@piousbox Contact from wasya.co form. Name: " . $name . " phone: " . $phone . " email: " . $email . " descr: " . $descr
-));
-curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
-$output = curl_exec($curl);
-curl_close($curl);
+    $data = "payload=" . json_encode(array(
+        "text" => "@piousbox Contact from wasya.co form. Name: " . $name . " phone: " . $phone . " email: " . $email . " descr: " . $descr
+    ));
+    curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+    $output = curl_exec($curl);
+    curl_close($curl);
+}
 
-echo $output;
+header('Content-Type: application/json');
+echo json_encode($output);
 

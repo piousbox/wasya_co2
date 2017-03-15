@@ -18,3 +18,7 @@ Make sure to install:
 
 Otherwise the jenkins job won't run.
 
+INSTALL
+=======
+ sudo apt-get install php7.0-curl
+

@@ -24,10 +24,15 @@ $(document).ready(function() {
   $(window).scroll(sunAndMoon);
   sunAndMoon();
 
+  $("#contact_us_response").popup({
+    background: true
+  });
+
   $("#contact_us button[type='Submit']").click(function (e) {
     var thisName  = $("#contact_us input[name='name']").val();
     var thisPhone = $("#contact_us input[name='phone']").val();
     var thisEmail = $("#contact_us input[name='email']").val();
+    var thisVerification = $("#contact_us input[name='verification']").val();
     var thisDescr = $("#contact_us textarea").val();
 
     e.preventDefault();   
@@ -35,12 +40,13 @@ $(document).ready(function() {
       type: 'POST',
       processData: true,
       url: "//" + document.domain + "/contact_us.php",
-      data: { name: thisName, phone: thisPhone, email: thisEmail, descr: thisDescr },
+      data: { name: thisName, phone: thisPhone, email: thisEmail, verification: thisVerification, descr: thisDescr },
       headers: {
         'ContentType': 'application/json'
       },
-      success: function () {
-        console.log('success');
+      success: function (data) {
+        $("#contact_us_response .response").html(data);
+        $("#contact_us_response").popup('show');
       }
     });
   });
