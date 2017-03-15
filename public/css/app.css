@@ -22,7 +22,10 @@
 
 
 
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body {
   background: url("/images/bg/confectionary.png");
 }
@@ -30,6 +33,13 @@ body {
 #sun {
   position: absolute;
   top: 150px;
+  left: -150px;
+}
+#moon {
+  position: absolute;
+  top: 250px;
+  right: -75px;
+  z-index: -5;
 }
 
 /* about wasya co */
@@ -46,6 +56,14 @@ body {
   height: 300px;
 }
 
+/* contact us */
+#contact_us {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+#contact_us textarea {
+  min-height: 200px;
+}
 
 /* services */
 .services-list {

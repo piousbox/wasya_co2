@@ -1,2 +1,4 @@
 0.0.0 - knowledge base is two-piece
 0.0.1 - no angular, better menus
+0.0.2 - backgrounds
+0.0.3 - email, slack notify
