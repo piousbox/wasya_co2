@@ -18,16 +18,19 @@
 @media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
 
 
+
+
 /* Small screens */
-@media only screen { } /* Define mobile styles */
-@media only screen and (max-width: 40em) { 
+@media only screen { 
   #sun {
     display: none;
   }
   #moon {
     display: none;
   }  
-} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+} /* Define mobile styles */
+@media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 /* Medium screens */
 @media only screen and (min-width: 40.063em) { 
   #sun {
